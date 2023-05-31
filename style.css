@@ -22,14 +22,19 @@ body {
     width: 400px;
     display: flex;
     flex-direction: column;
+    height: 50%;
+}
+
+p {
+    margin-top: 20px;
 }
 
 .notif {
-    margin-top: 10px;
     border-radius: 12px;
     border: 2px solid gray;
-    padding: 8px 10px 10px 25px;
+    padding: 10px 10px 10px 25px;
     height: 50px;
+    margin-bottom: 20px;
 }
 
 input {
@@ -45,4 +50,12 @@ button {
     border: transparent;
     height: 30px;
     cursor: pointer;
+    background-color: blueviolet;
+    color: white;
+}
+
+@media screen and (max-width: 500px) {
+    .cart {
+        margin: 20px;
+    }
 }
