@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,19 +8,29 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="container">
-            <div class="cart">
-                <h1>Tebak Angka</h1>
-                <p>Notif</p>
-                <div id="result" class="notif">
-
-                </div>
-                <label for="">Masukan tebakan anda</label>
-                <input type="number" id="inputAngka" required>
-                <button onclick="tebakAngka()" id="button" class="btn">Tebak</button>
+        <div id="popupContainer">
+            <div id="popupContent">
+                <h2>Selamat!</h2>
+                <p>Tebakan anda benar</p>
+                <button id="closePopup" class="btn1">Tutup</button>
             </div>
+        </div>
+
+        <div class="cart">
+            <h1>Tebak Angka</h1>
+            <p>Notif</p>
+            <div id="result" class="notif">
+
+            </div>
+            <label for="">Masukan tebakan anda</label>
+            <input type="number" id="inputAngka" required>
+            <button onclick="tebakAngka()" id="button" class="btn">Tebak</button>
+        </div>
     </div>
     <script src="app.js"></script>
 </body>
+
 </html>
